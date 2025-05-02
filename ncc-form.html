@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Registration - Government Polytechnic Nainital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-flex">
+          <div class="logo">
+            <img src="images/Logo.png" alt="GPN Logo" height="60">
+          </div>
+          <nav class="nav">
+            <ul class="nav-container">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a href="#">Courses ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">IT Engineering</a></li>
+                    <li><a href="#">Electronics Engineering</a></li>
+                    <li><a href="#">Mechanical Engineering</a></li>
+                    <li><a href="#">Civil Engineering</a></li>
+                    <li><a href="#">Electrical Engineering</a></li>
+                    <li><a href="#">D.Pharma</a></li>
+                </ul>
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="ncc-form.html">NCC</a></li>
+              <li><a href="nss-form.html">NSS</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+    <!-- NCC Registration Form -->
+    <section class="container">
+        <h2>NCC Registration Form</h2>
+
+        <form action="#" method="post" class="ncc-form">
+            <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fathername">Father's Name *</label>
+                <input type="text" id="fathername" name="fathername" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender *</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department *</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year *</label>
+                <select id="year" name="year" required>
+                    <option value="">Select</option>
+                    <option value="First Year">First Year</option>
+                    <option value="Second Year">Second Year</option>
+                    <option value="Third Year">Third Year</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Number *</label>
+                <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address *</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pro-footer">
+        <div class="container pro-footer-grid">
+      
+          <div class="footer-logo">
+            <img src="images/Logo.png" alt="GPN Logo" height="80">
+          Government Polytechnic Nainital, established in 1975, is a premier institute located in the beautiful hill town of Nainital, Uttarakhand. 
+          </div>
+      
+          <div>
+            <h4>Nainital</h4>
+            <p>Government Polytechnic Nainital<br>
+               Tallital, Nainital, Uttarakhand 263002</p>
+          </div>
+      
+          <div>
+            <h4>Courses</h4>
+            <p>IT Engineering
+                Electronics Engineering<br>
+                 Mechanical Engineering<br>
+                 Civil Engineering<br>
+                Electrical Engineering<br>
+              Dip. in Pharmacy</p>
+          </div>
+      
+          <div>
+            <h4>Contact</h4>
+            <p>Email: info@gpnainital.org<br>
+               Phone: +91 12345 67890</p>
+          </div>
+      
+      
+        </div>
+      
+        <hr>
+      
+        <div class="container pro-footer-bottom">
+          <p>© Copyright 2025, All Rights Reserved by Government Polytechnic Nainital</p>
+          
+        </div>
+      </footer>
+      
+    <script src="js/main.js"></script>
+</body>
+</html>
