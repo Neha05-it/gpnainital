@@ -219,8 +219,8 @@ a {
     text-align: center;
     color: var(--secondary-color);
     position: relative;
+    padding: 0 20px; /* Prevents content from touching screen edges on small devices */
 }
-
 
 .hero::after {
     content: "";
@@ -231,10 +231,14 @@ a {
     background: rgba(0, 86, 179, 0.5);
 }
 
-
 .hero-text {
     position: relative;
     z-index: 2;
+}
+
+.hero-text img {
+    height: 200px;
+    max-width: 100%;
 }
 
 .hero-text h1 {
@@ -245,6 +249,27 @@ a {
 .hero-text p {
     font-size: 24px;
 }
+
+/* 🔽 Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .hero-text img {
+        height: 120px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+}
+
 
 /* About, News, Gallery Sections */
 section {
