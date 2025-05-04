@@ -211,15 +211,16 @@ a {
 
 /* Hero */
 .hero {
-    height: 60vh;
-    background: url('../images/slider3.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--secondary-color);
-    position: relative;
-    padding: 0 20px; /* Prevents content from touching screen edges on small devices */
+
+  height: 60vh;
+  background: url('../images/slider3.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--secondary-color);
+  position: relative;
+  padding: 0 20px; /* Prevents content from touching screen edges on small devices */
 }
 
 .hero::after {
