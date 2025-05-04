@@ -9,34 +9,45 @@
 </head>
 <body>
 
-    <!-- Header -->
+   <!-- Header -->
     <header class="header">
-        <div class="container header-flex">
-          <div class="logo">
-            <img src="images/Logo.png" alt="GPN Logo" height="60">
-          </div>
-          <nav class="nav">
-            <ul class="nav-container">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="dropdown">
-                <a href="#">Courses ▾</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Electronics Engineering</a></li>
-                  <li><a href="#">Mechanical Engineering</a></li>
-                  <li><a href="#">Civil Engineering</a></li>
-                  <li><a href="#">Electrical Engineering</a></li>
-                </ul>
-              </li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="ncc-form.html">NCC</a></li>
-              <li><a href="nss-form.html">NSS</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+      <div class="container header-flex">
+        <div class="logo">
+          <img src="images/Logo.png" alt="GPN Logo" height="60">
         </div>
-      </header>
-      
+        <div>
+        <div class="menu-toggle" id="menu-toggle">  ☰
+        </div>
+        
+        <nav class="nav">
+          <ul class="nav-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#">Courses ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">IT Engineering</a></li>
+                <li><a href="#">Electronics Engineering</a></li>
+                <li><a href="#">Mechanical Engineering</a></li>
+                <li><a href="#">Civil Engineering</a></li>
+                <li><a href="#">Electrical Engineering</a></li>
+                <li><a href="#">D.Pharma</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="ncc-form.html">NCC</a></li>
+            <li><a href="nss-form.html">NSS</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+            
+            
+        </div>
+    </header>
+
 
     <!-- Contact Section -->
     <section class="container">
@@ -136,5 +147,22 @@
       </footer>
       
     <script src="js/main.js"></script>
+     <script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.querySelector('.nav-container');
+  const dropdown = document.querySelector('.dropdown');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+
+  // Optional: toggle dropdown on mobile tap
+  if (window.innerWidth <= 768) {
+    dropdown.addEventListener('click', (e) => {
+      e.preventDefault();
+      dropdown.classList.toggle('open');
+    });
+  }
+</script>
 </body>
 </html>
